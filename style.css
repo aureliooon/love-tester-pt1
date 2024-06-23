@@ -1,0 +1,102 @@
+body {
+    background: url(https://static.vecteezy.com/system/resources/previews/019/547/480/non_2x/abstract-love-background-love-heart-background-design-illustration-sweet-love-background-valentine-day-banner-valentine-frame-love-heart-free-vector.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .container {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px pink;
+  }
+  
+  .name {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FFB1B1;
+  }
+  
+  .heart-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .percentage-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .heart.animate {
+    animation: heartbeat 1s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .heart.bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .heart.flash {
+    animation: flash 1s infinite;
+  }
+  
+  @keyframes flash {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0.5;
+    }
+  }
+  
+  .heart.special-animation {
+    animation: colorChange 2s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      transform: scale(1);
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      transform: scale(1.2);
+      filter: hue-rotate(180deg);
+    }
+    100% {
+      transform: scale(1);
+      filter: hue-rotate(360deg);
+    }
+  }
+  

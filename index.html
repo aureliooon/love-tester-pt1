@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/hati.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>cek jodoh seseorang</title>
+    <style>
+      .heart-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .heart-container img {
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body onload="resetName()">
+    <div class="container">
+      <div class="name-container">
+        <div class="center">
+          <div class="input-container">
+            <input
+              type="text"
+              class="name"
+              id="name1"
+              placeholder="Nama"
+              required
+            />
+            <div class="heart-container">
+              <img src="img/heart.png" alt="heart" id="heart" />
+              <div class="percentage-overlay" id="percentageOverlay">0%</div>
+            </div>
+            <input
+              type="text"
+              class="name"
+              id="name2"
+              placeholder="Nama"
+              required
+            />
+          </div>
+          <button id="start-button" disabled>mulai</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
