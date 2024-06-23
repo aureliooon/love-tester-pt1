@@ -15,8 +15,9 @@ function resetName() {
     const percentageOverlay = document.getElementById("percentageOverlay");
   
     // Check for specific names to get 100%
-    if ((name1 === "rafi" && name2 === "florean") || (name1 === "florean" && name2 === "rafi")) {
-      percentageOverlay.textContent = "100%";
+    if ((name1 === "rafi" && name2 === "florean") || (name1 === "florean" && name2 === "rafi") ||
+        (name1 === "florean" && name2 === "jay") || (name1 === "jay" && name2 === "florean")) {
+      percentageOverlay.textContent = "1000000%";
       heart.classList.add("special-animation");
       setTimeout(() => heart.classList.remove("special-animation"), 7000);
       heart.classList.add("animate-heart");
@@ -58,4 +59,3 @@ function resetName() {
   document.getElementById("start-button").addEventListener("click", () => {
     start();
   });
-  
